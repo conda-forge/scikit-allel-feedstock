@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -37,7 +37,7 @@ requirements:
     - bcolz
     - zarr >=2.2
     - numcodecs
-    - matplotlib
+    - matplotlib-base
     - seaborn
     - pandas
     - pomegranate
