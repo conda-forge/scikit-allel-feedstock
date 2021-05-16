@@ -34,7 +34,6 @@ requirements:
     - numexpr
     - dask >=0.15
     - h5py
-    - bcolz
     - zarr >=2.2
     - numcodecs
     - matplotlib-base
