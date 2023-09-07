@@ -1,0 +1,21 @@
+From 1d35fed62b64decb19c42870a3f1de5cc3898f14 Mon Sep 17 00:00:00 2001
+From: Max Schelker <max.schelker@nostos-genomics.com>
+Date: Thu, 29 Jun 2023 15:11:19 +0200
+Subject: [PATCH 2/2] also fix missing `version` property
+
+---
+ pyproject.toml | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/pyproject.toml b/pyproject.toml
+index 52a42484..31c8d3ea 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -1,6 +1,7 @@
+ [project]
+ name = "scikit-allel"
+ requires-python = ">=3.6"
++dynamic = ["version", "description"]
+ 
+ [build-system]
+ # Minimum requirements for the build system to execute.
