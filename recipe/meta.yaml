@@ -13,6 +13,8 @@ source:
 
 build:
   number: 0
+  # missing pomegranate PyTorch dependency >=1.9 for Windows 
+  skip: true  # [win]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
