@@ -43,7 +43,7 @@ requirements:
     - matplotlib-base
     - seaborn
     - pandas
-    - pomegranate
+    - pomegranate >=1
 
 test:
   requires:
