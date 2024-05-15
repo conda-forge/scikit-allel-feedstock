@@ -28,14 +28,14 @@ requirements:
     - {{ stdlib('c') }}
     - {{ compiler('cxx') }}
   host:
-    - python >=3.9
+    - python
     - pip
     - cython
     - setuptools
     - setuptools_scm
     - numpy
   run:
-    - python >=3.9
+    - python
     - {{ pin_compatible('numpy') }}
     - scipy
     - scikit-learn
